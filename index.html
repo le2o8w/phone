@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Click clack</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--CSS Perso-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--JQuery -->
+    <script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="phone">
+		<div class="button-off"></div>
+		<div class="phone-body">
+			<div class="led"></div>
+			<div class="appareil-photo"></div>
+			<div class="micro"></div>
+			<div class="screen screen-veille off">
+				<div class="heure"></div>
+				<div class="date"></div>
+			</div>
+			<div class="screen screen-actif on">
+				<div class="menu">
+					<div class="heure"></div>
+					<div class="batterie"></div>
+				</div>
+				<div class="icone message">
+					<i class="fas fa-comment"></i>
+				</div>
+				<div class="icone agenda">
+					<div class="day"></div>
+					<div class="day-number"></div>
+				</div>
+				<div class="icone meteo">
+					<i class="fas fa-sun"></i>
+					<i class="fas fa-cloud"></i>
+				</div>
+				<div class="icone notepad">
+					<div class="full"></div>
+					<div class="ligne one"></div>
+					<div class="ligne two"></div>
+				</div>
+				<div class="icone task">
+					<i class="fas fa-circle one"></i>
+					<i class="fas fa-circle two"></i>
+					<i class="fas fa-circle three"></i>
+					<i class="fas fa-circle four"></i>
+				</div>
+				<div class="icone gallery">
+					<div class="circle circle1"></div>
+					<div class="circle circle2"></div>
+					<div class="circle circle3"></div>
+					<div class="circle circle4"></div>
+					<div class="circle circle5"></div>
+					<div class="circle circle6"></div>
+					<div class="circle circle7"></div>
+					<div class="circle circle8"></div>
+				</div>
+				<div class="icone parameters">
+					<i class="fas fa-cog"></i>
+				</div>
+				<div class="footer">
+					<div class="icone call">
+						<i class="fas fa-phone"></i>
+					</div>
+					<div class="icone email">
+						<i class="fas fa-envelope"></i>
+					</div>
+					<div class="icone music">
+						<i class="fas fa-music"></i>
+					</div>
+				</div>
+			</div>
+			<div class="screen screen-parameters off">
+				<div class="back">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="menu">
+					<div class="heure"></div>
+					<div class="batterie"></div>
+				</div>
+				<div class="background">
+					<label for="desktop">Couleur de la page</label>
+					<div class="desktop">
+						<input type="color" name="desktop" value="#9661de">
+					</div>
+					
+					<label for="desktop-mobile">Fond d'écran</label>
+					<div class="desktop-mobile">
+						<input type="color" name="desktop-mobile" value="#1fb1dc">
+					</div>
+
+					<label for="desktop-veille">Écran de veille</label>
+					<div class="desktop-veille">
+						<input type="color" name="desktop-veille" value="#6af275">
+					</div>
+
+					
+					<div class="reset">
+						Paramètres par défaut <i class="fas fa-cog"></i>
+					</div>
+				</div>
+			</div>
+			<div class="button-unlock"></div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>	
+</body>
+</html>
