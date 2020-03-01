@@ -619,11 +619,17 @@ body {
 
 @media screen and (max-width: 768px) {
 	.phone {
+		-webkit-transform: translate(-50%, -50%) scale(2);
+		-moz-transform: translate(-50%, -50%) scale(2);
+		-o-transform: translate(-50%, -50%) scale(2);
 		transform: translate(-50%, -50%) scale(2);
 	}
 }
 @media screen and (max-width: 450px) {
 	.phone {
+		-webkit-transform: translate(-50%, -50%) scale(2.5);
+		-moz-transform: translate(-50%, -50%) scale(2.5);
+		-o-transform: translate(-50%, -50%) scale(2.5);
 		transform: translate(-50%, -50%) scale(2.5);
 	}
 }
