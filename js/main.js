@@ -46,50 +46,49 @@ $(function(){
 	setInterval(dateNow, 200);
 
 	var buttonOff = $('.button-off'),
-	    buttonUnlock = $('.button-unlock'),
-	    iconeParameters = $('.icone.parameters'),
+		buttonUnlock = $('.button-unlock'),
+		iconeParameters = $('.icone.parameters'),
 
-	    screenVeille = $('.screen-veille'),
-	    screenParameters = $('.screen-parameters'),
-	    screenActif = $('.screen-actif'),
-	    icone = $('.icone'),
-	    menu = $('.menu'),
-	    back = $('.back');
+		screenVeille = $('.screen-veille'),
+		screenParameters = $('.screen-parameters'),
+		screenActif = $('.screen-actif'),
+		icone = $('.icone'),
+		menu = $('.menu'),
+		back = $('.back');
 
-	    function hideActif() {
-	    	screenActif.removeClass('on');
-	    	screenActif.addClass('off');
-	    }
+	function hideActif() {
+		screenActif.removeClass('on');
+		screenActif.addClass('off');
+	}
 
-	    function hideVeille() {
-	    	screenVeille.removeClass('on');
-	    	screenVeille.addClass('off');
-	    	icone.toggleClass('hide');
-		    menu.toggleClass('hide');
-	    }
+	function hideVeille() {
+		screenVeille.removeClass('on');
+		screenVeille.addClass('off');
+		icone.toggleClass('hide');
+		menu.toggleClass('hide');
+	}
 
-	    function hideParameters() {
-	    	screenParameters.removeClass('on');
-	    	screenParameters.addClass('off');
-	    }
+	function hideParameters() {
+		screenParameters.removeClass('on');
+		screenParameters.addClass('off');
+	}
 
-	    function showActif() {
-	    	screenActif.removeClass('off');
-	    	screenActif.addClass('on');
-	    }
+	function showActif() {
+		screenActif.removeClass('off');
+		screenActif.addClass('on');
+	}
 
-	    function showVeille() {
-	    	screenVeille.removeClass('off');
-	    	screenVeille.addClass('on');
-	    	icone.toggleClass('hide');
-		    menu.toggleClass('hide');
-	    }
+	function showVeille() {
+		screenVeille.removeClass('off');
+		screenVeille.addClass('on');
+		icone.toggleClass('hide');
+		menu.toggleClass('hide');
+	}
 
-	    function showParameters() {
-	    	screenParameters.removeClass('off');
-	    	screenParameters.addClass('on');
-	    }
-
+	function showParameters() {
+		screenParameters.removeClass('off');
+		screenParameters.addClass('on');
+	}
 
 	iconeParameters.on('click', function(){
 		showParameters();
@@ -114,7 +113,6 @@ $(function(){
 		}
 	});
 
-
 	buttonUnlock.on('click',function(){
 		if (screenParameters.hasClass('on')) {
 			hideParameters();
@@ -125,12 +123,10 @@ $(function(){
 		}
 	});
 
-
 });
 
 const inputs = document.querySelectorAll('.screen-parameters input');
 var reset = document.querySelector('.screen-parameters .reset');
-
 
 function handleUpdate() {
 	var baliseHTML = document.documentElement;
@@ -141,7 +137,7 @@ function handleUpdate() {
 function resetBackground() {
 	var baliseHTML = document.documentElement;
 
-	baliseHTML.style.setProperty("--desktop", "#b5e8fb");
+	baliseHTML.style.setProperty("--desktop", "#b082c2");
 	baliseHTML.style.setProperty("--desktop-mobile", "linear-gradient(to bottom, #30cfd0 0%, #330867 100%)");
 	baliseHTML.style.setProperty("--desktop-veille"," #000");
 }
@@ -151,4 +147,3 @@ inputs.forEach(function(input){
 });
 
 reset.addEventListener('click', resetBackground);
-
